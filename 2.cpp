@@ -33,6 +33,34 @@ int main()
 	valor %= 1;
 	cout << "A qtd de notas de 1 eh de: " << notas1 << endl;
 
+	/*if (notas100)*/
+	{
+		cout << notas100 << endl;
+	}
+	if (notas50)
+	{
+		cout << notas50 <<endl;
+	}
+	if (notas20)
+	{
+		cout << notas20 <<endl;
+	}
+	if (notas10)
+	{
+		cout << notas10 <<endl;
+	}
+	if (notas5)
+	{
+		cout << notas5 <<endl;
+	}
+	if (notas1)
+	{
+		cout << notas1 <<endl;
+	}
+
+
+
+		
 	system("pause");
 	return 0;
 }
