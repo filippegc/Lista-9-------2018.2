@@ -4,35 +4,27 @@ using namespace std;
 
 int main()
 {
-	int idade;
-	float planoSaude;
+	float valor = 220;
+	int qtdDependentes;
 
-	cout << "Informa tua idade para saber o valor a pagar: ";
-	cin >> idade;
+	cout << "Informe a qtd de dependentes:\t";
+	cout << "Menores de 10 anos: \n";
+	cin >> qtdDependentes;
+	valor += qtdDependentes * 80;
 
-	if (idade == 0 || idade < 10) {
-		planoSaude = 220 + 80;
+	cout << "Com idade entre 10 e 30 anoss: ";
+	cin >> qtdDependentes;
+	valor += qtdDependentes * 150;
 
-		cout << "O valor total a pagar eh de: R$" << planoSaude << endl;
-	}
-	else if (idade == 10 || idade <= 30) {
-		planoSaude = 220 + 150;
+	cout << "Com idade entre 31 e 60 anoss: ";
+	cin >> qtdDependentes;
+	valor += qtdDependentes * 195;
 
-		cout << "O valor total a pagar eh de: R$" << planoSaude << endl;
-	}
-	else if (idade == 31 || idade <= 60) {
-		planoSaude = 220 + 195;
+	cout << "Com idade maior de 60: ";
+	cin >> qtdDependentes;
+	valor += qtdDependentes * 250;
 
-		cout << "O valor total a pagar eh de: R$" << planoSaude << endl;
-	}
-	else if (idade > 60) {
-		planoSaude = 220 + 250;
 
-		cout << "O valor total a pagar eh de: R$" << planoSaude << endl;
-	}
-	else {
-		cout << "Idade invalida!\n";
-	}
 	system("pause");
 	return 0;
 }
