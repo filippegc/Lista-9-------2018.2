@@ -8,12 +8,12 @@ int main()
 	cout << "Digite o valor que desejas sacar: ";
 	cin >> valor;
 
-	notas100 = valor / 100;
-	valor = valor % 100; // valor %= 100;
+	notas100 = valor / 100; // divide o valor pela quantidade de notas
+	valor = valor % 100; // valor %= 100; //gera o mod (%)
 	cout << "A qtd de notas de 100 eh de: " << notas100 << endl;
 	
-	notas50 = valor / 50;
-	valor %= 50;
+	notas50 = valor / 50; // usa o mod(%) gerado pelo anterior
+	valor %= 50; // valor = valor %50 / gera o mod a ser usado no próximo
 	cout << "A qtd de notas de 50 eh de: " << notas50 << endl;
 
 
