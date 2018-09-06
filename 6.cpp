@@ -5,19 +5,17 @@ int main()
 {
 	setlocale(LC_ALL, "ptb");
 
-	float salario;
+	float salario, desconto=318.20;
 
-	cout << "Digite o salário: ";
+	cout << "Digite o salÃ¡rio: ";
 	cin >> salario;
 
-	if (salario >= 601.398)
+	if (salario +0.11 < 318,20)
 	{
-		cout << "O desconto é de R$318.20! " << endl;
-	}
-	else {
 		salario = salario * 0.89;
-		cout << "O desconto é de R$" << salario << "!" << endl;
+		cout << "O desconto Ã© de R$" << desconto << "!" << endl;
 	}
+	cout << "O desconto Ã© de R$" << desconto << "!" << endl;
 
 	system("pause");
 	return 0;
